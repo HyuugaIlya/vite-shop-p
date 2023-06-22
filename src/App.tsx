@@ -22,8 +22,8 @@ import Popular from './Pages/Popular';
 import styles from './moduleSCSS/App.module.scss';
 
 const Cart = lazy(() => import( /* webpackChunkName: "Cart" */ './Pages/Cart'));
-const Drinks = lazy(() => import( /* webpackChunkName: "Cart" */ './Pages/Drinks'));
-const Pizza = lazy(() => import( /* webpackChunkName: "Cart" */ './Pages/Pizza'));
+const Drinks = lazy(() => import( /* webpackChunkName: "Drinks" */ './Pages/Drinks'));
+const Pizza = lazy(() => import( /* webpackChunkName: "Pizza" */ './Pages/Pizza'));
 
 function App(): ReactElement {
   return (
