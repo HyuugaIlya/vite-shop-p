@@ -1,0 +1,54 @@
+@import '../../moduleSCSS/variables';
+@import '../../moduleSCSS/components/buttonMore';
+
+.container {
+  width: $container-width;
+  margin: 0 auto;
+}
+
+.errorInfo {
+  margin: 100px auto;
+  width: 500px;
+  text-align: center;
+
+  h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  & p {
+    font-size: 20px;
+  }
+}
+
+.title {
+  font-size: 38px;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+
+.itemTitle {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 11px;
+
+  @media (max-width: 1710px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 1310px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
