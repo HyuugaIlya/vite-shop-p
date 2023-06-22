@@ -47,7 +47,9 @@ export const PizzaModal: FC<TProps> = ({ id, price, title, imgUrl, sizes, types,
   return (
     <div onClick={() => setOpenModal(false)} className={styles.root}>
       <div onClick={(e) => e.stopPropagation()} className={styles.modalContent}>
-        <img src={imgUrl} alt="Pizza" />
+        <div className={styles.imgBlock}>
+          <img src={imgUrl} alt="Pizza" />
+        </div>
         <div className={styles.descBlock}>
           <div className={styles.description}>
             <h2>{title}</h2>
