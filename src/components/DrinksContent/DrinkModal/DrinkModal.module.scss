@@ -14,18 +14,28 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
 
   & > svg {
     position: relative;
-    top: -330px;
-    left: 5px;
+    top: 5px;
+    left: 10px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: scale(1.2);
+    }
   }
 
   @media (max-width: 1350px) {
     & > svg {
-      position: fixed;
-      top: 30px;
-      left: calc(100vw - 45px);
+      position: relative;
+      top: 25px;
+      left: -50px;
       
       path {
         fill: $orange;
@@ -68,20 +78,29 @@
   }
   
   @media (max-width: 1350px) {
-    margin: 10px;
-    height: 95%;
-    width: 95%;
+    margin-left: 25px;
+    max-height: 95vh;
+    height: fit-content;
+    width: 90vw;
+    justify-content: space-between;
     flex-direction: column;
     overflow: auto;
 
     .imgBlock {
       margin: 0 auto;
       padding-top: 40px;
+      padding-left: 35px;
 
       img {
         left: 0;
         top: 0;
       }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .imgBlock {
+      padding-top: 60px;
     }
   }
 }
