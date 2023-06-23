@@ -9,6 +9,7 @@
   bottom: 0;
   top: 0;
   position: fixed;
+  z-index: 50;
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
@@ -22,9 +23,9 @@
 
   @media (max-width: 1350px) {
     & > svg {
-      position: relative;
-      top: -320px;
-      left: -40px;
+      position: fixed;
+      top: 30px;
+      left: calc(100vw - 45px);
       
       path {
         fill: $orange;
@@ -67,14 +68,16 @@
   } 
 
   @media (max-width: 1350px) {
+    margin: 10px;
+    height: 95%;
+    width: 95%;
     flex-direction: column;
-    width: 100vw;
     overflow: auto;
 
     .imgBlock {
       margin: 0 auto;
-      box-sizing: border-box;
-      padding-top: 20px;
+      padding-top: 40px;
+      padding-left: 25px;
 
       img {
         left: 0;
@@ -82,7 +85,6 @@
       }
     }
   }
- 
 }
 
 .descBlock {
@@ -110,7 +112,7 @@
   }
 
   @media (max-width: 1350px) {
-    margin: 0;
+    margin-right: 0;
     padding: 20px;
   }
 }
