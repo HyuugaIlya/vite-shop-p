@@ -69,6 +69,8 @@ const Header: FC = () => {
                 {location.pathname !== '/cart' && <div className={styles.headerCart}>
                     <div className={styles.menu} onClick={onModalStateChange}>
                         <span className={clsx(styles.menuBurger, isModal ? styles.active : '')}></span>
+                        <span className={clsx(styles.menuBurger, isModal ? styles.active : '')}></span>
+                        <span className={clsx(styles.menuBurger, isModal ? styles.active : '')}></span>
                     </div>
                     {isModal && <div onClick={onModalStateChange} className={styles.modalMenu}>
                         <SideBar />
