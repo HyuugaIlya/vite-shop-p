@@ -3,13 +3,29 @@
 .container {
     width: $container-width;
     max-width: 820px;
-    margin: 90px auto;
+    margin: 60px auto;
+
+    @media (max-width: 460px) {
+        margin: 30px auto;
+    }
 }
 
 .top {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 768px) {
+
+    }
+    
+    @media (max-width: 460px) {
+        flex-direction: column;
+
+        .title {
+            margin-bottom: 20px;
+        }
+    }
 }
 
 .title {
