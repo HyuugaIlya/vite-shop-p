@@ -2,10 +2,11 @@ import {
   FC,
   useState
 } from "react";
-import styles from "./PizzaModal.module.scss";
 import { AppDispatch } from "../../../../store/store";
 import { useDispatch } from "react-redux";
 import { addItem } from "../../../../store/slices/cartSlice";
+
+import styles from "./PizzaModal.module.scss";
 
 type TProps = {
   id: string

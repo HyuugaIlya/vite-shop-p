@@ -6,7 +6,9 @@
     padding-top: 30px;
     margin-top: 30px;
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
+        margin: 20px 10px;
+
         .pizzaInfo {
             flex-direction: column;
             margin: 0 auto;
@@ -17,6 +19,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            text-align: center;
             width: 110%;
 
             .count {
@@ -24,18 +27,13 @@
                 padding: 5px;
 
                 b {
-                    padding-left: 10px;
+                    margin: 0 5px;
                 }
             }
 
-            .button {
-                margin-left: 10px;
-            }
-
             .price {
-                white-space: nowrap;
                 padding: 5px;
-                margin: 0 auto;
+                margin: 10px auto;
             }
 
             .remove {

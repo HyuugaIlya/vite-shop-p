@@ -1,10 +1,14 @@
+import { FC } from "react";
 import { useDispatch } from "react-redux"
 import { AppDispatch } from "../../../../store/store"
-import { addItem, clearItem, removeItem } from "../../../../store/slices/cartSlice"
-import { FC } from "react";
+import {
+    addItem,
+    clearItem,
+    removeItem
+} from "../../../../store/slices/cartSlice";
+import clsx from "clsx";
 
 import styles from './CartItem.module.scss';
-import clsx from "clsx";
 
 type TProps = {
     item: {
