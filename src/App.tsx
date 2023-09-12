@@ -6,7 +6,7 @@ import {
 import {
   Routes,
   Route,
-  // Navigate
+  Navigate
 } from 'react-router-dom';
 
 import Preloader from './components/Common/Preloader/Preloader';
@@ -35,7 +35,7 @@ function App(): ReactElement {
         <Header />
         <div className={styles.content}>
           <Routes>
-            {/* <Route path='/' element={<Navigate to='/popular' />} /> */}
+            <Route path='/' element={<Navigate to='/popular' />} />
             <Route path='/popular' element={<Popular />} />
             <Route path='/pizzas' element={
               <Suspense fallback={<Preloader />}>
