@@ -44,7 +44,7 @@ export const PopItem: FC<TProps> = ({ id, imgUrl, sizes, title, price, types }) 
                 className={styles.img}
                 onClick={onModalOpen}
                 src={imgUrl}
-                alt="Drink"
+                alt="Item"
             />
             <h4 className={styles.title}>{title}</h4>
             <div className={styles.bottom}>

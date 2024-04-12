@@ -6,12 +6,6 @@ import { drinksSlice } from "./slices/drinksSlice";
 import { popularSlice } from "./slices/popularSlice";
 // import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux";
 
-// const rootReducer = combineReducers({
-//     pizzasPage: pizzas,
-//     cartPage: cart,
-//     filter: filter
-// });
-
 const rootReducer = combineReducers({
     popularPage: popularSlice.reducer,
     pizzasPage: pizzasSlice.reducer,
