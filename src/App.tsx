@@ -11,8 +11,9 @@ import {
 
 import Preloader from './components/Common/Preloader/Preloader';
 import Header from './components/Header/Header';
-import NotFound from './Pages/NotFound';
 import SideBar from './components/SideBar/SideBar';
+
+import NotFound from './Pages/NotFound';
 import Popular from './Pages/Popular';
 
 // import Pizza from './Pages/Pizza';
